@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp">
+
+    <!-- Task Name -->
+    <TextView
+        android:id="@+id/taskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Name"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Task Description -->
+    <TextView
+        android:id="@+id/taskDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskTitle"
+        android:layout_marginTop="5dp"
+        android:text="Task Description"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="16sp" />
+
+    <!-- Task Status -->
+    <TextView
+        android:id="@+id/taskStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="16sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Task Timestamp -->
+    <TextView
+        android:id="@+id/taskCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Created"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+    <!-- Separator Line -->
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"/>
+</RelativeLayout>
